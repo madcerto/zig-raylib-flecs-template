@@ -1,0 +1,1 @@
+pub const Position2D = struct { x: f32, y: f32 };

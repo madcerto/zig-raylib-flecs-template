@@ -4,4 +4,4 @@
 
 [submodule "zig-flecs"]
 	path = lib/zig-flecs
-	url = https://github.com/prime31/zig-flecs
+	url = https://github.com/foxnne/zig-flecs
