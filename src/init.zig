@@ -9,16 +9,6 @@ pub fn init(world: *flecs.World, allocator: *std.mem.Allocator) std.mem.Allocato
     components.init(world);
     systems.init(world);
 
-    // create raylib camera
-    var rlcamera = try allocator.create(rl.Camera);
-    rlcamera.* = rl.Camera {
-        .position = rl.Vector3{ .x = 5, .y = 4, .z = 5 },
-        .target = rl.Vector3{ .x = 0, .y = 2, .z = 0 },
-        .up = rl.Vector3{ .x = 0, .y = 1, .z = 0 },
-        .fovy = 45,
-        .projection = rl.CAMERA_PERSPECTIVE
-    };
-
     // add entities
     const ehello_world = world.new();
     world.set(ehello_world, &components.Text {
@@ -33,6 +23,6 @@ pub fn init(world: *flecs.World, allocator: *std.mem.Allocator) std.mem.Allocato
 }
 
 pub fn deinit(world: *flecs.World, arena: *std.heap.ArenaAllocator) void {
-    // raylib deallocations can also go here, by doing a query on world, or add triggers for those
+    // raylib deallocations can also go here, by doing a query on world, or just add triggers for those
     arena.deinit();
 }

@@ -4,8 +4,6 @@ const flecs = @import("flecs");
 const init = @import("init.zig");
 const components = @import("components/export.zig");
 
-var camera: ?flecs.Entity = null;
-
 pub fn main() !void {
     // FLECS initialization
     var world = flecs.World.init();
@@ -20,7 +18,7 @@ pub fn main() !void {
     rl.SetTargetFPS(60);
 
     // game initialization
-    var buffer: [1000]u8 = undefined;
+    var buffer: [100]u8 = undefined;
     var fba = std.heap.FixedBufferAllocator.init(&buffer);
     var arena = std.heap.ArenaAllocator.init(&fba.allocator);
     const allocator = &arena.allocator;
