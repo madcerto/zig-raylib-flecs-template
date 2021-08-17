@@ -1,7 +1,7 @@
-[submodule "raylib"]
+[submodule "lib/raylib"]
 	path = lib/raylib
 	url = https://github.com/raysan5/raylib
 
-[submodule "zig-flecs"]
+[submodule "lib/zig-flecs"]
 	path = lib/zig-flecs
 	url = https://github.com/foxnne/zig-flecs
