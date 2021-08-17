@@ -2,7 +2,6 @@ const std = @import("std");
 const rl = @import("raylib.zig");
 const flecs = @import("flecs");
 const init = @import("init.zig");
-const components = @import("components/export.zig");
 
 pub fn main() !void {
     // FLECS initialization

@@ -52,8 +52,8 @@ pub fn build(b: *std.build.Builder) void {
 
     exe.addIncludeDir("./lib/zig-flecs/flecs");
     exe.addCSourceFile("./lib/zig-flecs/flecs/flecs.c", flecsFlags);
-    // exe.addObjectFile("./flecs/flecs.o");
     exe.addPackagePath("flecs", "./lib/zig-flecs/src/flecs.zig");
+    exe.addPackagePath("raylib", "./lib/raylib.zig");
     exe.install();
 
     const run_cmd = exe.run();

@@ -1,5 +1,5 @@
 const flecs = @import("flecs");
-const rl = @import("../raylib.zig");
+const rl = @import("raylib");
 
 pub fn setup_render(it: *flecs.ecs_iter_t) callconv(.C) void {
     rl.BeginDrawing();

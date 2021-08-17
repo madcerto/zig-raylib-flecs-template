@@ -1,5 +1,5 @@
 const flecs = @import("flecs");
-const rl = @import("../raylib.zig");
+const rl = @import("raylib");
 const components = @import("../components/export.zig");
 
 pub fn draw_text(it: *flecs.ecs_iter_t) callconv(.C) void {

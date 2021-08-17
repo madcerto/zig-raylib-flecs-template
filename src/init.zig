@@ -1,6 +1,6 @@
 const std = @import("std");
 const flecs = @import("flecs");
-const rl = @import("raylib.zig");
+const rl = @import("raylib");
 const components = @import("components/export.zig");
 const systems = @import("systems/export.zig");
 

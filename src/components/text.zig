@@ -1,4 +1,4 @@
-const rl = @import("../raylib.zig");
+const rl = @import("raylib");
 
 pub const Text = struct {
     text: [*c]const u8,
